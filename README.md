@@ -1,7 +1,5 @@
 # Adaptive Reasoning System
 
-[https://github.com/marcusjohansson/routing-intelligence.git](https://github.com/marcusjohansson/routing-intelligence.git)
-
 An intelligent question-answering system that routes questions to different reasoning strategies based on their characteristics (breadth and depth).
 
 ## Quick Start
