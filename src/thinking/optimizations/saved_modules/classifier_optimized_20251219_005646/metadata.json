@@ -1,0 +1,14 @@
+{
+  "module_name": "classifier",
+  "training_config": {
+    "num_examples": 30,
+    "auto_budget": "medium",
+    "training_time_seconds": 2137.241569042206
+  },
+  "final_metric": 0.8333333333333334,
+  "optimizer": "GEPA",
+  "validation_accuracy": 0.8333333333333334,
+  "timestamp": "20251219_005646",
+  "saved_at": "2025-12-19T00:56:46.719596",
+  "module_type": "AdaptiveReasoner"
+}

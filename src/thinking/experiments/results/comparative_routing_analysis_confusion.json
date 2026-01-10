@@ -1,0 +1,182 @@
+{
+  "BreadthDepth": {
+    "total_misclassifications": 126,
+    "most_common_errors": [
+      {
+        "expected": "DIRECT",
+        "predicted": "COT",
+        "count": 30,
+        "router": "BreadthDepth"
+      },
+      {
+        "expected": "GOT",
+        "predicted": "COMBINED",
+        "count": 30,
+        "router": "BreadthDepth"
+      },
+      {
+        "expected": "AOT",
+        "predicted": "COMBINED",
+        "count": 30,
+        "router": "BreadthDepth"
+      },
+      {
+        "expected": "TOT",
+        "predicted": "COMBINED",
+        "count": 24,
+        "router": "BreadthDepth"
+      },
+      {
+        "expected": "COT",
+        "predicted": "COMBINED",
+        "count": 6,
+        "router": "BreadthDepth"
+      }
+    ],
+    "error_rate": 0.7
+  },
+  "AdaptiveReasoner": {
+    "total_misclassifications": 95,
+    "most_common_errors": [
+      {
+        "expected": "COT",
+        "predicted": "DIRECT",
+        "count": 24,
+        "router": "AdaptiveReasoner"
+      },
+      {
+        "expected": "GOT",
+        "predicted": "COT",
+        "count": 22,
+        "router": "AdaptiveReasoner"
+      },
+      {
+        "expected": "COMBINED",
+        "predicted": "GOT",
+        "count": 20,
+        "router": "AdaptiveReasoner"
+      },
+      {
+        "expected": "TOT",
+        "predicted": "GOT",
+        "count": 12,
+        "router": "AdaptiveReasoner"
+      },
+      {
+        "expected": "COMBINED",
+        "predicted": "COT",
+        "count": 10,
+        "router": "AdaptiveReasoner"
+      }
+    ],
+    "error_rate": 0.5277777777777778
+  },
+  "MultiStrategy": {
+    "total_misclassifications": 95,
+    "most_common_errors": [
+      {
+        "expected": "COT",
+        "predicted": "DIRECT",
+        "count": 24,
+        "router": "MultiStrategy"
+      },
+      {
+        "expected": "GOT",
+        "predicted": "GOT (INTERCONNECTED/SYSTEMIC)",
+        "count": 22,
+        "router": "MultiStrategy"
+      },
+      {
+        "expected": "COMBINED",
+        "predicted": "GOT",
+        "count": 20,
+        "router": "MultiStrategy"
+      },
+      {
+        "expected": "TOT",
+        "predicted": "GOT",
+        "count": 12,
+        "router": "MultiStrategy"
+      },
+      {
+        "expected": "COMBINED",
+        "predicted": "GOT (INTERCONNECTED/SYSTEMIC)",
+        "count": 10,
+        "router": "MultiStrategy"
+      }
+    ],
+    "error_rate": 0.5277777777777778
+  },
+  "MultiStrategy_Aggressive": {
+    "total_misclassifications": 95,
+    "most_common_errors": [
+      {
+        "expected": "COT",
+        "predicted": "DIRECT",
+        "count": 24,
+        "router": "MultiStrategy_Aggressive"
+      },
+      {
+        "expected": "GOT",
+        "predicted": "GOT (INTERCONNECTED/SYSTEMIC)",
+        "count": 22,
+        "router": "MultiStrategy_Aggressive"
+      },
+      {
+        "expected": "COMBINED",
+        "predicted": "GOT",
+        "count": 20,
+        "router": "MultiStrategy_Aggressive"
+      },
+      {
+        "expected": "TOT",
+        "predicted": "GOT",
+        "count": 12,
+        "router": "MultiStrategy_Aggressive"
+      },
+      {
+        "expected": "COMBINED",
+        "predicted": "GOT (INTERCONNECTED/SYSTEMIC)",
+        "count": 10,
+        "router": "MultiStrategy_Aggressive"
+      }
+    ],
+    "error_rate": 0.5277777777777778
+  },
+  "MultiStrategy_Conservative": {
+    "total_misclassifications": 95,
+    "most_common_errors": [
+      {
+        "expected": "COT",
+        "predicted": "DIRECT",
+        "count": 24,
+        "router": "MultiStrategy_Conservative"
+      },
+      {
+        "expected": "GOT",
+        "predicted": "GOT (INTERCONNECTED/SYSTEMIC)",
+        "count": 22,
+        "router": "MultiStrategy_Conservative"
+      },
+      {
+        "expected": "COMBINED",
+        "predicted": "GOT",
+        "count": 20,
+        "router": "MultiStrategy_Conservative"
+      },
+      {
+        "expected": "TOT",
+        "predicted": "GOT",
+        "count": 12,
+        "router": "MultiStrategy_Conservative"
+      },
+      {
+        "expected": "COMBINED",
+        "predicted": "GOT (INTERCONNECTED/SYSTEMIC)",
+        "count": 10,
+        "router": "MultiStrategy_Conservative"
+      }
+    ],
+    "error_rate": 0.5277777777777778
+  }
+}

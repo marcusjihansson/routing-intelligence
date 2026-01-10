@@ -1,0 +1,86 @@
+{
+  "generate_paths": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Create diverse and informative branching thoughts or next steps regarding a given topic, leveraging the contextual guidance provided. The task involves exploring various perspectives or theories that might not be immediately obvious, ensuring comprehensive coverage of potential ideas or explanations related to the topic. \n\nInputs will include:\n1. A \"question\" that states the main topic to be explored.\n2. A \"context\" that provides additional background or a specific angle to consider when approaching the topic. This context may highlight particular hypotheses, theories, or considerations to focus on.\n\nTo perform the task effectively, utilize the following strategies:\n- Identify and explore different philosophical, scientific, or theoretical viewpoints related to the question.\n- Acknowledge any ethical, societal, or technological implications inherent in the topic.\n- Investigate any interdisciplinary insights that can enrich understanding, drawing from domains such as neuroscience, computer science, cognitive psychology, astrophysics, or sociology, depending on the context.\n- Consider historical or contemporary case studies, models, or frameworks that could inform or illustrate possible pathways or solutions.\n- Aim for a broad and varied range of thought branches, ensuring diversity in methodology, discipline, and underlying assumptions.\n\nIncorporate domain-specific knowledge where necessary and maintain an open-minded approach to encompass unconventional or underexplored ideas that could be valuable in addressing the question at hand.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Context:",
+          "description": "Previous thoughts or partial path"
+        },
+        {
+          "prefix": "Thought Branches:",
+          "description": "A newline-separated list of 3-5 distinct next steps or alternative perspectives. Do not write a paragraph."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "evaluate_path": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Instruction to Assistant:\n\nTask Overview:\nYour task is to evaluate the promise of a provided thought path in answering a given question. This involves assessing whether the proposed ideas in the thought path are comprehensive, relevant, and insightful in addressing the question. Your evaluation should result in a score and a reasoning that justifies the score based on the thought path's effectiveness and depth.\n\nInput Format:\n1. **Question**: This is the main question posed, requesting information or solutions on a particular topic.\n2. **Thought Path**: This consists of the ideas and strategies proposed to answer the question. The thought path may cover various approaches, technologies, or theories relevant to the question.\n\nOutput:\n1. **Score**: Assign a numerical score from 0.0 to 1.0, where 1.0 indicates a highly promising thought path, and lower scores reflect lesser degrees of promise.\n2. **Reasoning**: Provide a rationale for the score that outlines the strengths and gaps of the thought path. This includes consideration of its comprehensiveness, relevance, depth, and innovation.\n\nEvaluation Criteria:\n1. **Comprehensiveness**: Does the thought path provide a wide array of relevant ideas or approaches?\n2. **Relevance**: Are the ideas closely related to the question and context provided?\n3. **Innovation**: Does the thought path introduce new or lesser-explored ideas that may offer unique perspectives?\n4. **Feasibility**: Are the proposed solutions likely to be practical and implementable?\n5. **Balancing Tradition and Modernity**: Evaluate if a suitable balance is struck between modern approaches and traditional solutions, where applicable.\n\nGeneralizable Strategy:\n- Review the question to ensure you understand the context and objective.\n- Analyze the thought path for diversity in approaches and the inclusion of multiple perspectives.\n- Consider the originality and innovativeness of the proposed ideas.\n- Evaluate how the proposed ideas align with or deviate from conventional wisdom and whether such deviations add value.\n- Justify the score with a coherent appraisal of the thought path, pointing out specific strengths and potential shortcomings.\n\nUse this structured evaluation framework to ensure that your assessments are consistent, fair, and insightful. Always provide feedback that highlights areas for improvement where the thought path could be more effective or comprehensive.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Thought Path:",
+          "description": "${thought_path}"
+        },
+        {
+          "prefix": "Score:",
+          "description": "A float score between 0.0 and 1.0 indicating promise"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Brief justification for the score"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "synthesize.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "The task is to generate a concise answer field based on the provided `question` and `best_path`. The `best_path` outlines key information that needs to be integrated into the `answer`. The `question` sets the thematic context for the answer.\n\nInstructions:\n1. Thoroughly read the `question` to understand the context and the specific aspect that needs addressing.\n2. Review the `best_path` to extract the main ideas or explanations related to the `question`.\n3. Summarize these main ideas in a concise and coherent manner. Ensure that the answer field directly addresses the subject of the `question` while incorporating the critical points and specific terminologies from the `best_path`.\n4. The `answer` should be formatted in a clear, academic style, often using bullet points or numbered lists if multiple solutions or explanations are present.\n5. Avoid unnecessary elaborations; focus on distilling and clearly presenting the essence of the information from the `best_path`.\n6. Where applicable, the `answer` should reflect common theories, hypotheses, or practices mentioned in the `best_path`, using precise terms.\n\nTips:\n- If the `best_path` includes several components or solutions, list them clearly in the `answer`.\n- Ensure consistency with any specific terms or concepts mentioned in the `best_path`.\n\nExample Scenario:\n- For a `question` about alternative explanations for a paradox, include different theories or hypotheses from the `best_path` in the `answer`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Best Path:",
+          "description": "${best_path}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.11",
+      "dspy": "3.0.4",
+      "cloudpickle": "3.1"
+    }
+  }
+}

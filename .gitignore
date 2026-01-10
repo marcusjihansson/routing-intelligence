@@ -1,0 +1,54 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.manifest
+*.spec
+
+# Virtual environments
+.venv/
+venv/
+env/
+.venv
+
+# Type checking and linting
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Project-specific generated files
+*.log
+.env
+.env.local
+*.sqlite3
+
+# Distribution / packaging
+.wheels/
+ShareZilla/
+*.tar.gz
+*.zip
+
+# Local history (oh-my-zsh, etc.)
+.zsh_history
+.bash_history

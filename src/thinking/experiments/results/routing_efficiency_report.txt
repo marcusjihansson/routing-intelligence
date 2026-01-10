@@ -1,0 +1,50 @@
+================================================================================
+ROUTING EFFICIENCY TEST REPORT
+================================================================================
+
+SUMMARY STATISTICS
+------------------------------
+Total examples tested: 180
+Threshold combinations tested: 25
+Total test duration: 0.0s
+
+BEST CONFIGURATION
+--------------------
+Breadth Threshold: 0.80
+Depth Threshold: 0.70
+Accuracy: 41.1%
+
+TOP 5 THRESHOLD CONFIGURATIONS
+-----------------------------------
+1. Breadth: 0.8, Depth: 0.7
+   Accuracy: 41.1%
+   Avg Scores: {'breadth': 0.688333333333333, 'depth': 0.6444444444444449}
+2. Breadth: 0.8, Depth: 0.6
+   Accuracy: 37.8%
+   Avg Scores: {'breadth': 0.688333333333333, 'depth': 0.6444444444444449}
+3. Breadth: 0.7, Depth: 0.7
+   Accuracy: 33.3%
+   Avg Scores: {'breadth': 0.688333333333333, 'depth': 0.6444444444444449}
+4. Breadth: 0.8, Depth: 0.5
+   Accuracy: 31.1%
+   Avg Scores: {'breadth': 0.688333333333333, 'depth': 0.6444444444444449}
+5. Breadth: 0.6, Depth: 0.6
+   Accuracy: 30.0%
+   Avg Scores: {'breadth': 0.688333333333333, 'depth': 0.6444444444444449}
+
+MODE DISTRIBUTION (AVERAGED OVER CONFIGS)
+---------------------------------------------
+COMBINED: 82.2 avg predictions/config (45.6% total)
+COT: 74.4 avg predictions/config (41.3% total)
+GOT: 17.3 avg predictions/config (9.6% total)
+AOT: 6.2 avg predictions/config (3.4% total)
+
+RECOMMENDATIONS
+---------------
+❌ Suboptimal performance. Consider revisiting scoring/prompting.
+
+Suggested next steps:
+1. Validate best configuration on additional data
+2. Compare against baseline routing methods
+3. Analyze per-mode performance for targeted improvements
+4. Consider score calibration or different threshold logic

@@ -1,0 +1,292 @@
+{
+  "test_timestamp": "2025-12-19 17:56:26",
+  "total_examples": 180,
+  "routers_compared": [
+    "BreadthDepth",
+    "AdaptiveReasoner",
+    "MultiStrategy",
+    "MultiStrategy_Aggressive",
+    "MultiStrategy_Conservative"
+  ],
+  "router_results": {
+    "BreadthDepth": {
+      "router_name": "BreadthDepth",
+      "accuracy": 0.3,
+      "per_mode_accuracy": {
+        "DIRECT": 0.0,
+        "COT": 0.8,
+        "TOT": 0.0,
+        "GOT": 0.0,
+        "AOT": 0.0,
+        "COMBINED": 1.0
+      },
+      "mode_distribution": {
+        "COT": 60,
+        "COMBINED": 120
+      },
+      "confusion_matrix": {
+        "DIRECT": {
+          "COT": 30
+        },
+        "COT": {
+          "COMBINED": 6,
+          "COT": 24
+        },
+        "TOT": {
+          "COT": 6,
+          "COMBINED": 24
+        },
+        "GOT": {
+          "COMBINED": 30
+        },
+        "AOT": {
+          "COMBINED": 30
+        },
+        "COMBINED": {
+          "COMBINED": 30
+        }
+      },
+      "average_latency": 0.009252980020311144,
+      "total_examples": 180
+    },
+    "AdaptiveReasoner": {
+      "router_name": "AdaptiveReasoner",
+      "accuracy": 0.4722222222222222,
+      "per_mode_accuracy": {
+        "DIRECT": 1.0,
+        "COT": 0.2,
+        "TOT": 0.6,
+        "GOT": 0.26666666666666666,
+        "AOT": 0.7666666666666667,
+        "COMBINED": 0.0
+      },
+      "mode_distribution": {
+        "DIRECT": 61,
+        "COT": 38,
+        "TOT": 18,
+        "GOT": 40,
+        "AOT": 23
+      },
+      "confusion_matrix": {
+        "DIRECT": {
+          "DIRECT": 30
+        },
+        "COT": {
+          "COT": 6,
+          "DIRECT": 24
+        },
+        "TOT": {
+          "TOT": 18,
+          "GOT": 12
+        },
+        "GOT": {
+          "GOT": 8,
+          "COT": 22
+        },
+        "AOT": {
+          "AOT": 23,
+          "DIRECT": 7
+        },
+        "COMBINED": {
+          "COT": 10,
+          "GOT": 20
+        }
+      },
+      "average_latency": 0.7913377483685812,
+      "total_examples": 180
+    },
+    "MultiStrategy": {
+      "router_name": "MultiStrategy",
+      "accuracy": 0.4722222222222222,
+      "per_mode_accuracy": {
+        "DIRECT": 1.0,
+        "COT": 0.2,
+        "TOT": 0.6,
+        "GOT": 0.26666666666666666,
+        "AOT": 0.7666666666666667,
+        "COMBINED": 0.0
+      },
+      "mode_distribution": {
+        "DIRECT": 61,
+        "COT": 6,
+        "TOT": 18,
+        "GOT": 40,
+        "GOT (INTERCONNECTED/SYSTEMIC)": 32,
+        "AOT": 23
+      },
+      "confusion_matrix": {
+        "DIRECT": {
+          "DIRECT": 30
+        },
+        "COT": {
+          "COT": 6,
+          "DIRECT": 24
+        },
+        "TOT": {
+          "TOT": 18,
+          "GOT": 12
+        },
+        "GOT": {
+          "GOT": 8,
+          "GOT (INTERCONNECTED/SYSTEMIC)": 22
+        },
+        "AOT": {
+          "AOT": 23,
+          "DIRECT": 7
+        },
+        "COMBINED": {
+          "GOT (INTERCONNECTED/SYSTEMIC)": 10,
+          "GOT": 20
+        }
+      },
+      "average_latency": 4.0588220490349665,
+      "total_examples": 180
+    },
+    "MultiStrategy_Aggressive": {
+      "router_name": "MultiStrategy_Aggressive",
+      "accuracy": 0.4722222222222222,
+      "per_mode_accuracy": {
+        "DIRECT": 1.0,
+        "COT": 0.2,
+        "TOT": 0.6,
+        "GOT": 0.26666666666666666,
+        "AOT": 0.7666666666666667,
+        "COMBINED": 0.0
+      },
+      "mode_distribution": {
+        "DIRECT": 61,
+        "COT": 6,
+        "TOT": 18,
+        "GOT": 40,
+        "GOT (INTERCONNECTED/SYSTEMIC)": 32,
+        "AOT": 23
+      },
+      "confusion_matrix": {
+        "DIRECT": {
+          "DIRECT": 30
+        },
+        "COT": {
+          "COT": 6,
+          "DIRECT": 24
+        },
+        "TOT": {
+          "TOT": 18,
+          "GOT": 12
+        },
+        "GOT": {
+          "GOT": 8,
+          "GOT (INTERCONNECTED/SYSTEMIC)": 22
+        },
+        "AOT": {
+          "AOT": 23,
+          "DIRECT": 7
+        },
+        "COMBINED": {
+          "GOT (INTERCONNECTED/SYSTEMIC)": 10,
+          "GOT": 20
+        }
+      },
+      "average_latency": 0.0026363995340135363,
+      "total_examples": 180
+    },
+    "MultiStrategy_Conservative": {
+      "router_name": "MultiStrategy_Conservative",
+      "accuracy": 0.4722222222222222,
+      "per_mode_accuracy": {
+        "DIRECT": 1.0,
+        "COT": 0.2,
+        "TOT": 0.6,
+        "GOT": 0.26666666666666666,
+        "AOT": 0.7666666666666667,
+        "COMBINED": 0.0
+      },
+      "mode_distribution": {
+        "DIRECT": 61,
+        "COT": 6,
+        "TOT": 18,
+        "GOT": 40,
+        "GOT (INTERCONNECTED/SYSTEMIC)": 32,
+        "AOT": 23
+      },
+      "confusion_matrix": {
+        "DIRECT": {
+          "DIRECT": 30
+        },
+        "COT": {
+          "COT": 6,
+          "DIRECT": 24
+        },
+        "TOT": {
+          "TOT": 18,
+          "GOT": 12
+        },
+        "GOT": {
+          "GOT": 8,
+          "GOT (INTERCONNECTED/SYSTEMIC)": 22
+        },
+        "AOT": {
+          "AOT": 23,
+          "DIRECT": 7
+        },
+        "COMBINED": {
+          "GOT (INTERCONNECTED/SYSTEMIC)": 10,
+          "GOT": 20
+        }
+      },
+      "average_latency": 0.002991946538289388,
+      "total_examples": 180
+    }
+  },
+  "best_performing_router": "AdaptiveReasoner",
+  "accuracy_rankings": [
+    "AdaptiveReasoner",
+    "MultiStrategy",
+    "MultiStrategy_Aggressive",
+    "MultiStrategy_Conservative",
+    "BreadthDepth"
+  ],
+  "per_mode_breakdown": {
+    "AOT": {
+      "BreadthDepth": 0.0,
+      "AdaptiveReasoner": 0.7666666666666667,
+      "MultiStrategy": 0.7666666666666667,
+      "MultiStrategy_Aggressive": 0.7666666666666667,
+      "MultiStrategy_Conservative": 0.7666666666666667
+    },
+    "COMBINED": {
+      "BreadthDepth": 1.0,
+      "AdaptiveReasoner": 0.0,
+      "MultiStrategy": 0.0,
+      "MultiStrategy_Aggressive": 0.0,
+      "MultiStrategy_Conservative": 0.0
+    },
+    "COT": {
+      "BreadthDepth": 0.8,
+      "AdaptiveReasoner": 0.2,
+      "MultiStrategy": 0.2,
+      "MultiStrategy_Aggressive": 0.2,
+      "MultiStrategy_Conservative": 0.2
+    },
+    "DIRECT": {
+      "BreadthDepth": 0.0,
+      "AdaptiveReasoner": 1.0,
+      "MultiStrategy": 1.0,
+      "MultiStrategy_Aggressive": 1.0,
+      "MultiStrategy_Conservative": 1.0
+    },
+    "GOT": {
+      "BreadthDepth": 0.0,
+      "AdaptiveReasoner": 0.26666666666666666,
+      "MultiStrategy": 0.26666666666666666,
+      "MultiStrategy_Aggressive": 0.26666666666666666,
+      "MultiStrategy_Conservative": 0.26666666666666666
+    },
+    "TOT": {
+      "BreadthDepth": 0.0,
+      "AdaptiveReasoner": 0.6,
+      "MultiStrategy": 0.6,
+      "MultiStrategy_Aggressive": 0.6,
+      "MultiStrategy_Conservative": 0.6
+    }
+  }
+}

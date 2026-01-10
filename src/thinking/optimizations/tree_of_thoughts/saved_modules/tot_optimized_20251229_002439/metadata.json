@@ -1,0 +1,14 @@
+{
+  "module_name": "tot",
+  "training_config": {
+    "num_examples": 30,
+    "auto_budget": "light",
+    "training_time_seconds": 3730.580824136734
+  },
+  "optimizer": "GEPA",
+  "api_calls": 60,
+  "errors": 0,
+  "timestamp": "20251229_002439",
+  "saved_at": "2025-12-29T00:24:39.401496",
+  "module_type": "TreeOfThoughts"
+}

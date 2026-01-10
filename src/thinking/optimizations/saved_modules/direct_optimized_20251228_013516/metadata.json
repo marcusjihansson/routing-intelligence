@@ -1,0 +1,12 @@
+{
+  "module_name": "direct",
+  "training_config": {
+    "num_examples": 30,
+    "auto_budget": "light",
+    "training_time_seconds": 558.703949213028
+  },
+  "optimizer": "GEPA",
+  "timestamp": "20251228_013516",
+  "saved_at": "2025-12-28T01:35:16.766747",
+  "module_type": "DirectAnswer"
+}

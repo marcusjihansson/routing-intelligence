@@ -1,0 +1,103 @@
+{
+  "total_modules": 1,
+  "overall_improvement": 0.0,
+  "modules": [
+    {
+      "module_name": "cot",
+      "baseline_accuracy": 0.7300000000000001,
+      "optimized_accuracy": 0.7300000000000001,
+      "improvement": 0.0,
+      "improvement_pct": 0.0,
+      "baseline_avg_time": 0.007973694801330566,
+      "optimized_avg_time": 5.201923537254333,
+      "test_cases": 10,
+      "detailed_results": [
+        {
+          "example_idx": 0,
+          "baseline_score": 0.7,
+          "optimized_score": 0.7,
+          "improvement": 0.0,
+          "baseline_time": 0.06326794624328613,
+          "optimized_time": 4.690464735031128
+        },
+        {
+          "example_idx": 1,
+          "baseline_score": 0.7,
+          "optimized_score": 0.7,
+          "improvement": 0.0,
+          "baseline_time": 0.0016911029815673828,
+          "optimized_time": 3.100438117980957
+        },
+        {
+          "example_idx": 2,
+          "baseline_score": 0.7,
+          "optimized_score": 0.7,
+          "improvement": 0.0,
+          "baseline_time": 0.0018270015716552734,
+          "optimized_time": 9.580420732498169
+        },
+        {
+          "example_idx": 3,
+          "baseline_score": 0.7,
+          "optimized_score": 0.7,
+          "improvement": 0.0,
+          "baseline_time": 0.001644134521484375,
+          "optimized_time": 4.433956146240234
+        },
+        {
+          "example_idx": 4,
+          "baseline_score": 0.7,
+          "optimized_score": 0.7,
+          "improvement": 0.0,
+          "baseline_time": 0.002347230911254883,
+          "optimized_time": 6.503277063369751
+        },
+        {
+          "example_idx": 5,
+          "baseline_score": 0.7,
+          "optimized_score": 0.7,
+          "improvement": 0.0,
+          "baseline_time": 0.002301931381225586,
+          "optimized_time": 7.3584208488464355
+        },
+        {
+          "example_idx": 6,
+          "baseline_score": 0.7,
+          "optimized_score": 0.7,
+          "improvement": 0.0,
+          "baseline_time": 0.0017981529235839844,
+          "optimized_time": 5.371303081512451
+        },
+        {
+          "example_idx": 7,
+          "baseline_score": 0.7,
+          "optimized_score": 0.7,
+          "improvement": 0.0,
+          "baseline_time": 0.001573801040649414,
+          "optimized_time": 4.876163721084595
+        },
+        {
+          "example_idx": 8,
+          "baseline_score": 1.0,
+          "optimized_score": 1.0,
+          "improvement": 0.0,
+          "baseline_time": 0.0012857913970947266,
+          "optimized_time": 2.652961015701294
+        },
+        {
+          "example_idx": 9,
+          "baseline_score": 0.7,
+          "optimized_score": 0.7,
+          "improvement": 0.0,
+          "baseline_time": 0.0019998550415039062,
+          "optimized_time": 3.4518299102783203
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "improved": 0,
+    "degraded": 0,
+    "neutral": 1
+  }
+}

@@ -1,0 +1,48 @@
+================================================================================
+COMPARATIVE ROUTING ANALYSIS REPORT
+================================================================================
+
+OVERALL PERFORMANCE RANKINGS
+-----------------------------------
+1. AdaptiveReasoner
+   Accuracy: 47.2%
+   Avg latency: 0.791s
+2. MultiStrategy
+   Accuracy: 47.2%
+   Avg latency: 4.059s
+3. MultiStrategy_Aggressive
+   Accuracy: 47.2%
+   Avg latency: 0.003s
+4. MultiStrategy_Conservative
+   Accuracy: 47.2%
+   Avg latency: 0.003s
+5. BreadthDepth
+   Accuracy: 30.0%
+   Avg latency: 0.009s
+
+PER-MODE PERFORMANCE (TOP 3 ROUTERS)
+----------------------------------------
+AOT:
+  - AdaptiveReasoner: 76.7%
+  - MultiStrategy: 76.7%
+  - MultiStrategy_Aggressive: 76.7%
+COMBINED:
+  - AdaptiveReasoner: 0.0%
+  - MultiStrategy: 0.0%
+  - MultiStrategy_Aggressive: 0.0%
+COT:
+  - AdaptiveReasoner: 20.0%
+  - MultiStrategy: 20.0%
+  - MultiStrategy_Aggressive: 20.0%
+DIRECT:
+  - AdaptiveReasoner: 100.0%
+  - MultiStrategy: 100.0%
+  - MultiStrategy_Aggressive: 100.0%
+GOT:
+  - AdaptiveReasoner: 26.7%
+  - MultiStrategy: 26.7%
+  - MultiStrategy_Aggressive: 26.7%
+TOT:
+  - AdaptiveReasoner: 60.0%
+  - MultiStrategy: 60.0%
+  - MultiStrategy_Aggressive: 60.0%

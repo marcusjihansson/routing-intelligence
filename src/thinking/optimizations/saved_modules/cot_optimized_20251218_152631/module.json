@@ -1,0 +1,113 @@
+{
+  "reason.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "How does photosynthesis convert light into chemical energy?",
+        "reasoning": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy stored in glucose. This process occurs primarily in the chloroplasts of plant cells, where chlorophyll captures sunlight. The light energy splits water molecules into oxygen and hydrogen. Carbon dioxide from the air combines with the hydrogen to form glucose through a series of reactions known as the Calvin cycle. Overall, this process converts solar energy into a usable form of chemical energy, providing energy for growth and metabolism.",
+        "answer": "Photosynthesis converts light into chemical energy through a two-stage process: 1) Light-dependent reactions occur in the thylakoid membranes, where light energy is absorbed by chlorophyll, splitting water molecules and releasing oxygen, while generating ATP and NADPH. 2) In the light-independent reactions, or Calvin cycle, ATP and NADPH are used to convert carbon dioxide into glucose, thus storing energy in a chemical form."
+      },
+      {
+        "augmented": true,
+        "question": "Why does ice float on water?",
+        "reasoning": "Ice floats on water because of its lower density compared to liquid water. When water freezes, its molecular structure forms a crystalline lattice that occupies more space than the same molecules in liquid form. This structure causes ice to be less dense (about 9% less) than liquid water, allowing it to float.",
+        "answer": "Ice floats on water because it is less dense than liquid water. When water freezes, its molecules arrange themselves in a solid structure that occupies more space than when they are in liquid form, resulting in lower density."
+      },
+      {
+        "augmented": true,
+        "question": "Explain how vaccines work to protect against diseases",
+        "reasoning": "Vaccines work by training the immune system to recognize and combat pathogens without causing the disease. 1) A vaccine contains harmless parts of the pathogen (like proteins or inactivated forms) or a blueprint for making them (like mRNA). 2) When the vaccine is administered, the immune system recognizes these components as foreign and mounts an immune response. 3) This includes producing antibodies that can neutralize the pathogen. 4) The immune system also creates memory cells that remember the pathogen. 5) If the vaccinated individual is later exposed to the actual disease, their immune system can quickly recognize and respond to it, providing protection against severe illness.",
+        "answer": "Vaccines protect against diseases by training the immune system: 1) They contain harmless parts of pathogens or their genetic material. 2) The immune system responds by producing antibodies and memory cells. 3) If exposed to the actual pathogen later, the immune system can respond quickly, preventing illness."
+      },
+      {
+        "augmented": true,
+        "question": "How do airplanes generate lift to fly?",
+        "reasoning": "Airplanes generate lift through the principles of aerodynamics, primarily using the shape of their wings. The wings are designed with an airfoil shape, which means that the top surface is curved while the bottom is relatively flat. As the airplane moves forward, air flows faster over the top of the wing and slower underneath. According to Bernoulli's principle, faster-moving air creates lower pressure on top of the wing compared to the higher pressure beneath it. This pressure difference creates an upward force known as lift, allowing the airplane to ascend and maintain flight.",
+        "answer": "Airplanes generate lift by using their wing shape (airfoil). As they move forward, air flows faster over the top of the wings and slower underneath, creating lower pressure above the wings and higher pressure below. This pressure difference results in an upward force called lift, enabling the airplane to fly."
+      },
+      {
+        "augmented": true,
+        "question": "Why do seasons change throughout the year?",
+        "reasoning": "Seasons change throughout the year due to the tilt of the Earth's axis and its orbit around the Sun. The Earth's axis is tilted at an angle of approximately 23.5 degrees. As the Earth orbits the Sun, different parts of the Earth receive varying amounts of sunlight at different times of the year, resulting in seasonal changes. For instance, when the Northern Hemisphere is tilted toward the Sun, it experiences summer with longer days and increased sunlight, while the Southern Hemisphere experiences winter with shorter days and less sunlight, and vice versa.",
+        "answer": "Seasons change throughout the year because of the tilt of the Earth's axis (about 23.5 degrees) and its orbit around the Sun. As the Earth travels around the Sun, different regions receive varying amounts of sunlight. This leads to warmer temperatures and longer days in summer when a hemisphere is tilted toward the Sun, and colder temperatures and shorter days in winter when it is tilted away."
+      },
+      {
+        "augmented": true,
+        "question": "How does photosynthesis convert light into chemical energy?",
+        "reasoning": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy stored in glucose. This process occurs primarily in the chloroplasts of plant cells, where chlorophyll captures sunlight. The light energy splits water molecules into oxygen and hydrogen. Carbon dioxide from the air combines with the hydrogen to form glucose through a series of reactions known as the Calvin cycle. Overall, this process converts solar energy into a usable form of chemical energy, providing energy for growth and metabolism.",
+        "answer": "Photosynthesis converts light into chemical energy through a two-stage process: 1) Light-dependent reactions occur in the thylakoid membranes, where light energy is absorbed by chlorophyll, splitting water molecules and releasing oxygen, while generating ATP and NADPH. 2) In the light-independent reactions, or Calvin cycle, ATP and NADPH are used to convert carbon dioxide into glucose, thus storing energy in a chemical form."
+      },
+      {
+        "augmented": true,
+        "question": "Why does ice float on water?",
+        "reasoning": "Ice floats on water because of its lower density compared to liquid water. When water freezes, its molecular structure forms a crystalline lattice that occupies more space than the same molecules in liquid form. This structure causes ice to be less dense (about 9% less) than liquid water, allowing it to float.",
+        "answer": "Ice floats on water because it is less dense than liquid water. When water freezes, its molecules arrange themselves in a solid structure that occupies more space than when they are in liquid form, resulting in lower density."
+      },
+      {
+        "augmented": true,
+        "question": "Explain how vaccines work to protect against diseases",
+        "reasoning": "Vaccines work by training the immune system to recognize and combat pathogens without causing the disease. 1) A vaccine contains harmless parts of the pathogen (like proteins or inactivated forms) or a blueprint for making them (like mRNA). 2) When the vaccine is administered, the immune system recognizes these components as foreign and mounts an immune response. 3) This includes producing antibodies that can neutralize the pathogen. 4) The immune system also creates memory cells that remember the pathogen. 5) If the vaccinated individual is later exposed to the actual disease, their immune system can quickly recognize and respond to it, providing protection against severe illness.",
+        "answer": "Vaccines protect against diseases by training the immune system: 1) They contain harmless parts of pathogens or their genetic material. 2) The immune system responds by producing antibodies and memory cells. 3) If exposed to the actual pathogen later, the immune system can respond quickly, preventing illness."
+      },
+      {
+        "question": "Explain how vaccines work to protect against diseases",
+        "answer": "Vaccines work through immune system training: 1) A vaccine introduces a weakened or inactive pathogen to the body. 2) The immune system recognizes it as foreign and produces antibodies. 3) Memory cells are created that remember this pathogen. 4) If the real pathogen enters later, memory cells quickly produce antibodies. 5) The rapid immune response prevents or reduces disease severity."
+      },
+      {
+        "question": "How does photosynthesis convert light into chemical energy?",
+        "answer": "Photosynthesis converts light into chemical energy through a multi-step process: 1) Light is absorbed by chlorophyll in chloroplasts. 2) Light energy splits water molecules, releasing oxygen. 3) The energy is used to create ATP and NADPH. 4) These molecules power the Calvin cycle to fix CO2 into glucose. This process stores solar energy in chemical bonds."
+      },
+      {
+        "question": "How do airplanes generate lift to fly?",
+        "answer": "Airplanes generate lift through aerodynamic principles: 1) The wing has a curved top surface and flatter bottom surface. 2) Air travels faster over the curved top, slower under the bottom. 3) Faster-moving air creates lower pressure (Bernoulli's principle). 4) Higher pressure below the wing pushes up more than pressure above pushes down. 5) This pressure difference creates an upward force called lift."
+      },
+      {
+        "question": "Why does ice float on water?",
+        "answer": "Ice floats on water due to hydrogen bonding: 1) Water molecules form hydrogen bonds with each other. 2) When water freezes, molecules arrange in a hexagonal crystal structure. 3) This structure has more space between molecules than liquid water. 4) Less dense arrangement means ice is less dense than water. 5) Less dense materials float on more dense ones, so ice floats."
+      },
+      {
+        "question": "How do airplanes generate lift to fly?",
+        "answer": "Airplanes generate lift through aerodynamic principles: 1) The wing has a curved top surface and flatter bottom surface. 2) Air travels faster over the curved top, slower under the bottom. 3) Faster-moving air creates lower pressure (Bernoulli's principle). 4) Higher pressure below the wing pushes up more than pressure above pushes down. 5) This pressure difference creates an upward force called lift."
+      },
+      {
+        "question": "Why do seasons change throughout the year?",
+        "answer": "Seasons change due to Earth's axial tilt: 1) Earth's axis is tilted 23.5 degrees relative to its orbital plane. 2) As Earth orbits the sun, different hemispheres tilt toward the sun. 3) When tilted toward the sun, a hemisphere receives more direct sunlight. 4) More direct sunlight means more solar energy and warmer temperatures (summer). 5) When tilted away, sunlight is less direct, creating cooler temperatures (winter)."
+      },
+      {
+        "question": "How does photosynthesis convert light into chemical energy?",
+        "answer": "Photosynthesis converts light into chemical energy through a multi-step process: 1) Light is absorbed by chlorophyll in chloroplasts. 2) Light energy splits water molecules, releasing oxygen. 3) The energy is used to create ATP and NADPH. 4) These molecules power the Calvin cycle to fix CO2 into glucose. This process stores solar energy in chemical bonds."
+      },
+      {
+        "question": "Explain how vaccines work to protect against diseases",
+        "answer": "Vaccines work through immune system training: 1) A vaccine introduces a weakened or inactive pathogen to the body. 2) The immune system recognizes it as foreign and produces antibodies. 3) Memory cells are created that remember this pathogen. 4) If the real pathogen enters later, memory cells quickly produce antibodies. 5) The rapid immune response prevents or reduces disease severity."
+      }
+    ],
+    "signature": {
+      "instructions": "Given the fields `question`, produce the fields `answer`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.11",
+      "dspy": "3.0.4",
+      "cloudpickle": "3.1"
+    }
+  }
+}

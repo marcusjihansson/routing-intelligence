@@ -1,0 +1,28 @@
+{
+  "generate": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Task Instructions:\n\nYour task is to generate high-quality answers to the given `question` input while adhering to the following guidelines to ensure the responses are thorough, precise, and educational:\n\n1. **Comprehensiveness**: Provide an in-depth response that encompasses all necessary details to give a full understanding of the question. Aim for a balance between detail and brevity, providing all essential information without unnecessary elaboration.\n\n2. **Clarity and Simplicity**: Ensure all answers are easy to follow and comprehend. Use simple language whenever possible, only resorting to technical jargon when the context absolutely requires it.\n\n3. **Accuracy**: Ensure that all factual information is current and correct. Verify data against authoritative sources to guarantee accuracy and reliability. Regularly update responses to reflect new knowledge and discoveries.\n\n4. **Relevance**: Tailor the response to address the specific question directly. Exclude any information that does not serve the purpose of answering the query.\n\n5. **Specificity**: For questions that pertain to specialized subjects, offer detailed insights and context. For example, in scientific queries, include fundamental processes and principles, while in literature-related questions, add context about authorship and thematic developments.\n\n6. **Example Tailoring**: Employ examples to clarify and illustrate key points where applicable. Choose examples that are commonly known and relevant to the subject matter to enhance understanding.\n\n7. **Brevity with Completeness**: Craft responses that are succinct yet comprehensive. Avoid omitting vital information for the sake of brevity, especially when providing historical or modern references.\n\n8. **Tone**: Maintain a professional and educational tone throughout. Strive for neutrality in your answers to ensure they are informative and unbiased.\n\n9. **Numerical Accuracy**: Pay particular attention to numerical data, ensuring precision and correct representation in all responses.\n\n10. **Continuous Improvement**: Utilize feedback and scoring metrics to refine answer quality over time. Reflect on patterns in the feedback to make ongoing improvements to response accuracy and completeness.\n\n**Domain-Specific Information**:\n\n- For scientific questions, such as those involving biological concepts like photosynthesis, include pertinent details about associated processes like light-dependent reactions and the Calvin cycle, as well as their significance in relation to the synthesis of glucose and the release of oxygen.\n\n- For literature questions, such as identifying authors of significant literary works, mention the author and provide insights into the work's historical context, themes, and its significance or impact in literature.\n\nBy following these instructions, ensure that your responses are aligned with the expectations for quality and completeness, addressing all aspects of the query accurately and thoroughly.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.11",
+      "dspy": "3.0.4",
+      "cloudpickle": "3.1"
+    }
+  }
+}

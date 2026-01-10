@@ -1,0 +1,22 @@
+[project]
+name = "thinking"
+version = "0.1.0"
+description = "Adaptive Reasoning System (proof-of-concept)"
+readme = "README.md"
+requires-python = ">=3.11"
+ dependencies = [
+    "dspy-ai>=3.0.4",
+    "python-dotenv>=1.2.1",
+    "requests>=2.32.5",
+    "tenacity>=8.2.0",
+ ]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

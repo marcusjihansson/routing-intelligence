@@ -1,0 +1,367 @@
+{
+  "accuracy": 0.5833333333333334,
+  "correct": 35,
+  "total": 60,
+  "detailed_results": [
+    {
+      "question": "What are the foundational elements of language?",
+      "expected": "AOT",
+      "predicted": "DIRECT",
+      "correct": false
+    },
+    {
+      "question": "From first principles, why does gravity exist?",
+      "expected": "AOT",
+      "predicted": "AOT",
+      "correct": true
+    },
+    {
+      "question": "Generate different endings for this story",
+      "expected": "TOT",
+      "predicted": "TOT",
+      "correct": true
+    },
+    {
+      "question": "From first principles, why does consciousness exist?",
+      "expected": "AOT",
+      "predicted": "AOT",
+      "correct": true
+    },
+    {
+      "question": "What causes earthquakes?",
+      "expected": "COT",
+      "predicted": "DIRECT",
+      "correct": false
+    },
+    {
+      "question": "How does a combustion engine function step by step?",
+      "expected": "COT",
+      "predicted": "COT",
+      "correct": true
+    },
+    {
+      "question": "When did World War II happen?",
+      "expected": "DIRECT",
+      "predicted": "DIRECT",
+      "correct": true
+    },
+    {
+      "question": "Develop a complete strategy for Mars colonization",
+      "expected": "COMBINED",
+      "predicted": "TOT",
+      "correct": false
+    },
+    {
+      "question": "Derive the concept of ownership from basic assumptions",
+      "expected": "AOT",
+      "predicted": "AOT",
+      "correct": true
+    },
+    {
+      "question": "Consider alternative explanations for the placebo effect",
+      "expected": "TOT",
+      "predicted": "COT",
+      "correct": false
+    },
+    {
+      "question": "Walk me through solving a quadratic equation",
+      "expected": "COT",
+      "predicted": "COT",
+      "correct": true
+    },
+    {
+      "question": "Explain the network between supply chains, labor, and inflation",
+      "expected": "GOT",
+      "predicted": "GOT",
+      "correct": true
+    },
+    {
+      "question": "What are different ways to interpret the ending of Inception?",
+      "expected": "TOT",
+      "predicted": "TOT",
+      "correct": true
+    },
+    {
+      "question": "How does a combustion engine function step by step?",
+      "expected": "COT",
+      "predicted": "COT",
+      "correct": true
+    },
+    {
+      "question": "Create a comprehensive solution for global water scarcity",
+      "expected": "COMBINED",
+      "predicted": "COT",
+      "correct": false
+    },
+    {
+      "question": "Explain the process of evolution",
+      "expected": "COT",
+      "predicted": "COT",
+      "correct": true
+    },
+    {
+      "question": "Why does gravity occur?",
+      "expected": "COT",
+      "predicted": "AOT",
+      "correct": false
+    },
+    {
+      "question": "Who is Albert Einstein?",
+      "expected": "DIRECT",
+      "predicted": "DIRECT",
+      "correct": true
+    },
+    {
+      "question": "Explain the network between supply chains, labor, and inflation",
+      "expected": "GOT",
+      "predicted": "GOT",
+      "correct": true
+    },
+    {
+      "question": "Generate alternative solutions for reducing plastic waste",
+      "expected": "TOT",
+      "predicted": "TOT",
+      "correct": true
+    },
+    {
+      "question": "Break down morality to its atomic components",
+      "expected": "AOT",
+      "predicted": "AOT",
+      "correct": true
+    },
+    {
+      "question": "How do airplanes generate lift?",
+      "expected": "COT",
+      "predicted": "DIRECT",
+      "correct": false
+    },
+    {
+      "question": "Build an end-to-end plan for achieving energy independence",
+      "expected": "COMBINED",
+      "predicted": "GOT",
+      "correct": false
+    },
+    {
+      "question": "When did the moon landing occur?",
+      "expected": "DIRECT",
+      "predicted": "DIRECT",
+      "correct": true
+    },
+    {
+      "question": "How do sleep, stress, and cognitive performance interconnect?",
+      "expected": "GOT",
+      "predicted": "GOT",
+      "correct": true
+    },
+    {
+      "question": "Build an end-to-end plan for achieving energy independence",
+      "expected": "COMBINED",
+      "predicted": "GOT",
+      "correct": false
+    },
+    {
+      "question": "What is the essence of justice?",
+      "expected": "AOT",
+      "predicted": "COT",
+      "correct": false
+    },
+    {
+      "question": "Explore alternative explanations for the Fermi paradox",
+      "expected": "TOT",
+      "predicted": "TOT",
+      "correct": true
+    },
+    {
+      "question": "Explain the connections between quantum mechanics and consciousness",
+      "expected": "GOT",
+      "predicted": "COT",
+      "correct": false
+    },
+    {
+      "question": "Explain the connections between quantum mechanics and consciousness",
+      "expected": "GOT",
+      "predicted": "COT",
+      "correct": false
+    },
+    {
+      "question": "From first principles, why does gravity exist?",
+      "expected": "AOT",
+      "predicted": "AOT",
+      "correct": true
+    },
+    {
+      "question": "Build an end-to-end plan for achieving energy independence",
+      "expected": "COMBINED",
+      "predicted": "GOT",
+      "correct": false
+    },
+    {
+      "question": "What is the capital of France?",
+      "expected": "DIRECT",
+      "predicted": "DIRECT",
+      "correct": true
+    },
+    {
+      "question": "Develop a holistic strategy for reducing income inequality",
+      "expected": "COMBINED",
+      "predicted": "COT",
+      "correct": false
+    },
+    {
+      "question": "Explore alternative explanations for the Fermi paradox",
+      "expected": "TOT",
+      "predicted": "TOT",
+      "correct": true
+    },
+    {
+      "question": "What is the largest ocean?",
+      "expected": "DIRECT",
+      "predicted": "DIRECT",
+      "correct": true
+    },
+    {
+      "question": "Consider different perspectives on artificial consciousness",
+      "expected": "TOT",
+      "predicted": "GOT",
+      "correct": false
+    },
+    {
+      "question": "When did the moon landing occur?",
+      "expected": "DIRECT",
+      "predicted": "DIRECT",
+      "correct": true
+    },
+    {
+      "question": "What are the relationships between social media and mental health?",
+      "expected": "GOT",
+      "predicted": "COT",
+      "correct": false
+    },
+    {
+      "question": "Walk me through solving a quadratic equation",
+      "expected": "COT",
+      "predicted": "COT",
+      "correct": true
+    },
+    {
+      "question": "What are various approaches to conflict resolution?",
+      "expected": "TOT",
+      "predicted": "GOT",
+      "correct": false
+    },
+    {
+      "question": "Create a comprehensive framework for ethical AI development",
+      "expected": "COMBINED",
+      "predicted": "GOT",
+      "correct": false
+    },
+    {
+      "question": "From first principles, why do numbers exist?",
+      "expected": "AOT",
+      "predicted": "AOT",
+      "correct": true
+    },
+    {
+      "question": "What are different ways to interpret the ending of Inception?",
+      "expected": "TOT",
+      "predicted": "TOT",
+      "correct": true
+    },
+    {
+      "question": "Explain the network between supply chains, labor, and inflation",
+      "expected": "GOT",
+      "predicted": "GOT",
+      "correct": true
+    },
+    {
+      "question": "Explain how vaccines work",
+      "expected": "COT",
+      "predicted": "DIRECT",
+      "correct": false
+    },
+    {
+      "question": "What year was the internet invented?",
+      "expected": "DIRECT",
+      "predicted": "DIRECT",
+      "correct": true
+    },
+    {
+      "question": "Define artificial intelligence",
+      "expected": "DIRECT",
+      "predicted": "DIRECT",
+      "correct": true
+    },
+    {
+      "question": "How do climate, economics, and politics interconnect in energy policy?",
+      "expected": "GOT",
+      "predicted": "COT",
+      "correct": false
+    },
+    {
+      "question": "What are the relationships between AI, ethics, and policy?",
+      "expected": "GOT",
+      "predicted": "GOT",
+      "correct": true
+    },
+    {
+      "question": "When did the moon landing occur?",
+      "expected": "DIRECT",
+      "predicted": "DIRECT",
+      "correct": true
+    },
+    {
+      "question": "Develop a complete strategy for Mars colonization",
+      "expected": "COMBINED",
+      "predicted": "TOT",
+      "correct": false
+    },
+    {
+      "question": "What are the relationships between nutrition, exercise, and longevity?",
+      "expected": "GOT",
+      "predicted": "GOT",
+      "correct": true
+    },
+    {
+      "question": "Develop a holistic strategy for reducing income inequality",
+      "expected": "COMBINED",
+      "predicted": "COT",
+      "correct": false
+    },
+    {
+      "question": "Why does gravity occur?",
+      "expected": "COT",
+      "predicted": "AOT",
+      "correct": false
+    },
+    {
+      "question": "What are various approaches to conflict resolution?",
+      "expected": "TOT",
+      "predicted": "GOT",
+      "correct": false
+    },
+    {
+      "question": "Design a complete solution for modernizing transportation infrastructure",
+      "expected": "COMBINED",
+      "predicted": "COT",
+      "correct": false
+    },
+    {
+      "question": "What is the largest ocean?",
+      "expected": "DIRECT",
+      "predicted": "DIRECT",
+      "correct": true
+    },
+    {
+      "question": "What is time at the most fundamental level?",
+      "expected": "AOT",
+      "predicted": "AOT",
+      "correct": true
+    },
+    {
+      "question": "Break down democracy to its atomic components",
+      "expected": "AOT",
+      "predicted": "AOT",
+      "correct": true
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+================================================================================
+THRESHOLD OPTIMIZATION ANALYSIS REPORT
+================================================================================
+
+OPTIMIZATION SUMMARY
+-------------------------
+Optimization Criteria: balanced
+Total Configurations Analyzed: 25
+
+RECOMMENDED CONFIGURATION
+------------------------------
+Breadth Threshold: 0.80
+Depth Threshold: 0.70
+Expected Accuracy: 41.1%
+Reasoning: Highest accuracy (no configurations met 70% threshold)
+
+THRESHOLD SENSITIVITY ANALYSIS
+-----------------------------------
+Breadth Threshold Impact:
+  Threshold 0.4: Mean 21.8% (n=5)
+  Threshold 0.5: Mean 21.1% (n=5)
+  Threshold 0.6: Mean 23.8% (n=5)
+  Threshold 0.7: Mean 27.1% (n=5)
+  Threshold 0.8: Mean 30.9% (n=5)
+
+Depth Threshold Impact:
+  Threshold 0.4: Mean 21.6% (n=5)
+  Threshold 0.5: Mean 24.2% (n=5)
+  Threshold 0.6: Mean 29.6% (n=5)
+  Threshold 0.7: Mean 30.9% (n=5)
+  Threshold 0.8: Mean 18.4% (n=5)
+
+MODE ROUTING PATTERNS
+-------------------------
+COT:
+  Avg Percentage: 41.3%
+  Std Deviation: 20.4%
+
+COMBINED:
+  Avg Percentage: 47.5%
+  Std Deviation: 28.1%
+
+AOT:
+  Avg Percentage: 9.5%
+  Std Deviation: 7.9%
+
+GOT:
+  Avg Percentage: 21.8%
+  Std Deviation: 20.6%
+
+RECOMMENDATIONS
+------------------
+❌ Suboptimal performance - revisit scoring approach or data quality
+
+Stability Note:
+  Most stable config: 0.8/0.7 (acc: 41.1%, stability: 0.331)
+
+Next Steps:
+1. Validate optimal configuration on additional test data
+2. Compare with baseline routing methods
+3. Consider fine-tuning thresholds based on domain requirements
+4. Evaluate performance on real user queries

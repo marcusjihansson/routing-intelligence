@@ -1,0 +1,12 @@
+{
+  "module_name": "cot",
+  "training_config": {
+    "num_examples": 30,
+    "auto_budget": "light",
+    "training_time_seconds": 0.0993189811706543
+  },
+  "optimizer": "BootstrapFewShot",
+  "timestamp": "20251218_152631",
+  "saved_at": "2025-12-18T15:26:31.513041",
+  "module_type": "ChainOfThought"
+}

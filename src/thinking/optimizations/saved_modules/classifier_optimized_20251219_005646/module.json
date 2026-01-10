@@ -1,0 +1,536 @@
+{
+  "classifier.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Classify the reasoning complexity needed for a question.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Reasoning Type:",
+          "description": "One of: DIRECT (simple fact), COT (step-by-step), TOT (multiple valid paths/creative), GOT (interconnected/systemic), AOT (first principles/fundamental truths), COMBINED (complex/multi-faceted)"
+        },
+        {
+          "prefix": "Confidence:",
+          "description": "Confidence score 0-1"
+        },
+        {
+          "prefix": "Rationale:",
+          "description": "Why this reasoning type?"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['DIRECT'].generate": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the fields `question`, produce the fields `answer`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['COT'].reason.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the fields `question`, produce the fields `answer`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['TOT'].generate_paths": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Generate diverse branching thoughts or next steps based on the context.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Context:",
+          "description": "Previous thoughts or partial path"
+        },
+        {
+          "prefix": "Thought Branches:",
+          "description": "A newline-separated list of 3-5 distinct next steps or alternative perspectives. Do not write a paragraph."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['TOT'].evaluate_path": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Evaluate the promise of a thought path for answering the question.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Thought Path:",
+          "description": "${thought_path}"
+        },
+        {
+          "prefix": "Score:",
+          "description": "A float score between 0.0 and 1.0 indicating promise"
+        },
+        {
+          "prefix": "Reasoning:",
+          "description": "Brief justification for the score"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['TOT'].synthesize.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the fields `question`, `best_path`, produce the fields `answer`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Best Path:",
+          "description": "${best_path}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['GOT'].decompose": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Decompose a complex question into key concepts or thought nodes.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Thought Nodes:",
+          "description": "A newline-separated list of 5-8 key concepts, entities, or sub-problems. Do not write a paragraph."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['GOT'].find_connections": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Analyze the relationship between two thought nodes.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Node A:",
+          "description": "${node_a}"
+        },
+        {
+          "prefix": "Node B:",
+          "description": "${node_b}"
+        },
+        {
+          "prefix": "Connection:",
+          "description": "Description of the relationship or link"
+        },
+        {
+          "prefix": "Strength:",
+          "description": "A float score between 0.0 and 1.0 indicating connection strength"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['GOT'].aggregate.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the fields `question`, `nodes`, `connections`, produce the fields `answer`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Nodes:",
+          "description": "${nodes}"
+        },
+        {
+          "prefix": "Connections:",
+          "description": "${connections}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['AOT'].atomize": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Decompose a question into its most fundamental atomic truths or premises.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Atoms:",
+          "description": "A newline-separated list of 3-5 fundamental facts or premises. Do not write a paragraph."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['AOT'].validate_atom": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Check if a premise is truly fundamental and irreducible.",
+      "fields": [
+        {
+          "prefix": "Atom:",
+          "description": "${atom}"
+        },
+        {
+          "prefix": "Is Fundamental:",
+          "description": "True or False"
+        },
+        {
+          "prefix": "Explanation:",
+          "description": "Why it is or isn't fundamental"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['AOT'].reason_from_atoms.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the fields `question`, `validated_atoms`, produce the fields `reconstructed_reasoning`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Validated Atoms:",
+          "description": "${validated_atoms}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Reconstructed Reasoning:",
+          "description": "${reconstructed_reasoning}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['AOT'].conclude.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the fields `question`, `reasoning`, produce the fields `answer`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['COMBINED'].got.decompose": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Decompose a complex question into key concepts or thought nodes.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Thought Nodes:",
+          "description": "A newline-separated list of 5-8 key concepts, entities, or sub-problems. Do not write a paragraph."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['COMBINED'].got.find_connections": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Analyze the relationship between two thought nodes.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Node A:",
+          "description": "${node_a}"
+        },
+        {
+          "prefix": "Node B:",
+          "description": "${node_b}"
+        },
+        {
+          "prefix": "Connection:",
+          "description": "Description of the relationship or link"
+        },
+        {
+          "prefix": "Strength:",
+          "description": "A float score between 0.0 and 1.0 indicating connection strength"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['COMBINED'].got.aggregate.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the fields `question`, `nodes`, `connections`, produce the fields `answer`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Nodes:",
+          "description": "${nodes}"
+        },
+        {
+          "prefix": "Connections:",
+          "description": "${connections}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['COMBINED'].aot.atomize": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Decompose a question into its most fundamental atomic truths or premises.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Atoms:",
+          "description": "A newline-separated list of 3-5 fundamental facts or premises. Do not write a paragraph."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['COMBINED'].aot.validate_atom": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Check if a premise is truly fundamental and irreducible.",
+      "fields": [
+        {
+          "prefix": "Atom:",
+          "description": "${atom}"
+        },
+        {
+          "prefix": "Is Fundamental:",
+          "description": "True or False"
+        },
+        {
+          "prefix": "Explanation:",
+          "description": "Why it is or isn't fundamental"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['COMBINED'].aot.reason_from_atoms.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the fields `question`, `validated_atoms`, produce the fields `reconstructed_reasoning`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Validated Atoms:",
+          "description": "${validated_atoms}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Reconstructed Reasoning:",
+          "description": "${reconstructed_reasoning}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['COMBINED'].aot.conclude.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the fields `question`, `reasoning`, produce the fields `answer`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "modes['COMBINED'].synthesize.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Given the fields `question`, `wide_analysis`, `deep_analysis`, produce the fields `answer`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Wide Analysis:",
+          "description": "${wide_analysis}"
+        },
+        {
+          "prefix": "Deep Analysis:",
+          "description": "${deep_analysis}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.11",
+      "dspy": "3.0.4",
+      "cloudpickle": "3.1"
+    }
+  }
+}
