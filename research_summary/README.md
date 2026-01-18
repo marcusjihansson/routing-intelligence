@@ -155,7 +155,7 @@ The following documents demonstrate how this research applies to Shopify Sidekic
 
 **Framework**: DSPy + Custom Architecture
 
-**Year**: 2024
+**Year**: 2025
 
 ---
 
